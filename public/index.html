@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>REXFIT</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- lexend -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/bf01bc6a3e.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="stylesheet" href="/src/css/feed.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWAGram">
+  <!-- <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-60x60.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-180x180.png" sizes="180x180"> -->
+  <link rel="icon" type="image/x-icon" href="/src/images/icons/icon-144x144.png">
+  <meta name="msapplication-TileImage" content="/src/images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#3f51b5">
+</head>
+<body>
+
+<div id="app">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <!-- nav full -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <a href="#" class="d-flex align-items-center mt-2" style="text-decoration: none;"><img src="/src/images/icons/icon-512x512.png" alt="logo" style="border-radius: 50%; width: 40px;"/><span class="mdl-layout-title text-white ms-2">REXFIT</span></a>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <span class=""><a class="navlink" href="/">Feed</a></span>
+          <span class=""><a class="navlink" href="/help">Help</a></span>
+          <span class=""><span id="share-image-button" class="navlink2">Install</span></span>
+          </nav>
+      </div>
+  </header>
+    <!-- /nav full -->
+
+    <!-- nav drawer -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">REXFIT</span>
+      <nav class="mdl-navigation">
+        <a class="" href="/">Feed</a>
+        <a class="" href="/help">Help</a>
+        <span class="" id="share-image-button">Install</span>
+      </nav>
+    </div>
+    <!-- /nav drawer -->
+
+
+    <main class="mdl-layout__content mat-typography">
+      <div id="create-post">
+        <form>
+          <div class="input-section mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="title">
+            <label class="mdl-textfield__label" for="title" name="title">Title</label>
+          </div>
+          <div class="input-section mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="manual-location">
+            <input class="mdl-textfield__input" type="text" id="location">
+            <label class="mdl-textfield__label" for="location" name="location">Location</label>
+          </div>
+          <br>
+          <div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent"
+                    type="submit" id="post-btn">Post!
+            </button>
+          </div>
+          <br>
+          <div>
+            <button class="mdl-button mdl-js-button mdl-button--fab" id="close-create-post-modal-btn" type="button">
+              <i class="material-icons">close</i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- <img src="/src/images/home-workout.jpg" alt="Explore the City" class="main-image"> -->
+      <div class="page-content">
+        <h3 class="text-center text-white" style="text-shadow: 0px 0px 5px rgba(255, 203, 45, 1);">Workouts</h3>
+        <div id="shared-moments" class="d-flex w-100 flex-wrap justify-content-center"></div>
+      </div>
+      <div class="floating-button">
+        <a href="#">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+                  id="buttongoup">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </a>
+      </div>
+      <div id="confirmation-toast" aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button type="button" class="mdl-snackbar__action"></button>
+      </div>
+    </main>
+  </div>
+</div>
+<script defer src="/src/js/material.min.js"></script>
+<script src="/src/js/promise.js"></script>
+<script src="/src/js/fetch.js"></script>
+<script src="/src/js/idb.js"></script>
+<script src="/src/js/utility.js"></script>
+<script src="/src/js/app.js"></script>
+<script src="/src/js/feed.js"></script>
+</body>
+</html>

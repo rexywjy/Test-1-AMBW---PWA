@@ -1,0 +1,82 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .3); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.drawer-option {
+  padding: 16px;
+}
+
+body{
+  background: url('../images/home-workout.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+body, h1, h2, h3, h4, h5, h6, span{
+  font-family: "Lexend" !important;
+}
+
+.mdl-layout__header{
+  background: rgba(0,0,0,0.5) !important;
+}
+
+#share-image-button{
+  cursor: pointer;
+}
+
+.navlink{
+  color: rgba(255,255,255,0.4);
+  border-bottom: 3px solid transparent;
+  padding: 10px 20px;
+  text-decoration: none;
+  /* border-radius: 20px; */
+  margin: 0 10px;
+}
+.navlink:hover{
+  color: white;
+  border-bottom: 3px solid white;
+  transition: 1s;
+}
+
+.navlink2{
+  color: rgba(255, 203, 45, .5);
+  border-bottom: 3px solid transparent;
+  padding: 10px 20px;
+  text-decoration: none;
+  /* border-radius: 20px; */
+  margin: 0 10px;
+}
+.navlink2:hover{
+  color: rgba(255, 203, 45, 1);
+  border-bottom: 3px solid rgba(255, 203, 45, 1);
+  transition: 1s;
+}
+
+#buttongoup{
+  background: rgba(255, 255, 255, .3) !important;
+}
+
