@@ -7,8 +7,9 @@ function openCreatePostModal() {
   // createPostArea.style.display = 'block';
   if (deferredPrompt) {
     deferredPrompt.prompt();
+    alert('openCreatePostModal');
 
-    deferredPrompt.userChoice.then(function(choiceResult) {
+    deferredPrompt.userChoice.then(function (choiceResult) {
       console.log(choiceResult.outcome);
 
       if (choiceResult.outcome === 'dismissed') {
@@ -19,6 +20,8 @@ function openCreatePostModal() {
     });
 
     deferredPrompt = null;
+  }else{
+    alert(deferredPrompt);
   }
 
   // if ('serviceWorker' in navigator) {
