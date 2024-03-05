@@ -7,7 +7,7 @@ function openCreatePostModal() {
   // createPostArea.style.display = 'block';
   if (deferredPrompt) {
     deferredPrompt.prompt();
-    alert('openCreatePostModal');
+    // alert('openCreatePostModal');
 
     deferredPrompt.userChoice.then(function (choiceResult) {
       console.log(choiceResult.outcome);
