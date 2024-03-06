@@ -115,7 +115,6 @@
     var desc = document.querySelector('.desc');
     var nowData = JSON.parse(localStorage.getItem('now'));
     spanElement.textContent = nowData.title;
-    <!-- headerActor.style.background = 'url(' + nowData.image + ') no-repeat center center/cover'; -->
     headerActor.setAttribute('src', nowData.image);
     icon.setAttribute('class', 'ri-' + nowData.icon);
     desc.textContent = nowData.desc;
