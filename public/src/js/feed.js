@@ -125,6 +125,7 @@ function goToDetails(slug) {
   console.log('fetch',fetch(url),'fetch');
   var networkDataReceived = false;
 
+  // if (!sessionStorage.getItem(slug)) {
   if (!localStorage.getItem(slug)) {
     // console.log(fetch(url));
     fetch(url)
@@ -144,7 +145,6 @@ function goToDetails(slug) {
       });
   } else {
     localStorage.setItem('now', localStorage.getItem(slug));
-    // Jika data sudah ada di session storage, arahkan ke halaman detail
     window.location.href = '/detail.html';
   }
 }
